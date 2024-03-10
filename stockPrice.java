@@ -45,6 +45,7 @@ public class stockPrice {
 
         HashMap<String, String> excelmap = new HashMap<>();
 
+        //Reading data from xlsx file
         FileInputStream file = new FileInputStream("C:\\Users\\Hp\\Desktop\\stock.xlsx");
         Sheet sh = WorkbookFactory.create(file).getSheet("Sheet1");
         int lastRow = sh.getLastRowNum();
